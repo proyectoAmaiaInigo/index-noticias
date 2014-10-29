@@ -38,6 +38,7 @@ body {
     z-index: 3;
 }
 
+
 nav {
     z-index: 2;
     opacity: 0.7;
@@ -83,7 +84,7 @@ nav a#pull{
     display: none;
 }
 
-@media only screen and ( max-width: 600px){
+@media only screen and ( max-width: 900px){
         #logo{
           display: none;
         }
@@ -120,6 +121,9 @@ nav a#pull{
             position: absolute;
             right: 15px;
             top: 20px;
+        }
+        #buscador{
+            display: none;
         }
 }
 
@@ -237,16 +241,22 @@ nav a#pull{
 }
 
 /*****************************buscador******************************/
-#search{
-  position: relative;
-  z-index: 3;
+
+
+#buscador{
+    z-index: 3;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
 }
+
 #search input[type="text"] {
-    background: url(img/busca.png) no-repeat 10px 6px #fcfcfc;
+    background: url(img/busca2.png) no-repeat 10px 6px #fcfcfc;
     border: 1px solid #d1d1d1;
     font: bold 12px Arial,Helvetica,Sans-serif;
     color: #bebebe;
-    width: 150px;
+    width: 200px;
     padding: 6px 15px 6px 35px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -262,6 +272,6 @@ nav a#pull{
     }
 
 #search input[type="text"]:focus {
-    width: 200px;
+    width: 250px;
     }
 
